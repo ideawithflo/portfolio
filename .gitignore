@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.sanity/
+dist/
+.env.local
+*.log
+.DS_Store
+assets/projects/
+cms/node_modules/
+web/node_modules/
+web/.next/
+web/public/images/projects/
