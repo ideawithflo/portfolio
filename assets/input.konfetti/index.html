@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Workshop</title>
+
+    <!-- Google Sans Flex Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,ROND@8..144,-10..0,25..150,400..700,0..100&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,ROND@8..144,-10..0,25..150,400..700,0..100&display=swap">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+    <!-- Optional if no premium splitting -->
+</head>
+
+<body>
+    <div class="vignette-overlay"></div>
+    <canvas id="particle-canvas"></canvas>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="assets/Logo@300x.png" alt="FLO Logo" class="custom-logo">
+            <span class="presents-text">präsentiert</span>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <div class="secondary-logo" id="hero-logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4285f4" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3L22 20H2L12 3Z" />
+                </svg>
+            </div>
+
+            <h1 id="hero-title" class="hero-title">
+                Vibe-Coding<br>with Google Antigravity
+            </h1>
+            <p id="hero-subtitle" class="hero-subtitle">
+                Workshop for aWerner Kru & Friends
+            </p>
+
+            <a href="#presentation" class="scroll-indicator" id="scroll-indicator">
+                Scroll to presentation
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9l6 6 6-6" />
+                </svg>
+            </a>
+        </div>
+    </main>
+
+    <section id="presentation" class="presentation-section">
+        <h2 style="font-size: 36px; margin-bottom: 20px; font-weight: 700;">Beispiele zur Verwendung</h2>
+        <h3 class="video-subheading"
+            style="font-size: 20px; color: var(--text-secondary); font-weight: 500; margin-bottom: 30px;"> A Blender
+            Scripts Demo</h3>
+        <div class="video-container">
+            <video id="demo-video" src="assets/blender.scripts.mp4" playsinline></video>
+            <div class="video-progress-container">
+                <input type="range" id="video-progress" min="0" max="100" value="0" step="0.1">
+            </div>
+            <div class="video-controls">
+                <button id="play-btn" class="btn btn-primary video-btn">Start</button>
+                <button id="speed-btn" class="btn btn-secondary video-btn speed-btn">1,5x Geschwindigkeit</button>
+                <a href="01.html.viewer/index.html" class="btn btn-primary video-btn" target="_blank">Start Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3 Video Section -->
+    <section id="presentation-2" class="presentation-section">
+        <h3 class="video-subheading"
+            style="font-size: 20px; color: var(--text-secondary); font-weight: 500; margin-bottom: 30px;">
+            B Project Filter Walkthrough</h3>
+        <div class="video-container">
+            <video id="demo-video-2" src="assets/03.wakthrough.nf.projectfilter.mov" playsinline></video>
+            <div class="video-progress-container">
+                <input type="range" id="video-progress-2" min="0" max="100" value="0" step="0.1">
+            </div>
+            <div class="video-controls">
+                <button id="play-btn-2" class="btn btn-primary video-btn">Start</button>
+                <button id="speed-btn-2" class="btn btn-secondary video-btn speed-btn">1,5x Geschwindigkeit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4 Image Section -->
+    <section id="presentation-3" class="presentation-section">
+        <h3 class="video-subheading"
+            style="font-size: 20px; color: var(--text-secondary); font-weight: 500; margin-bottom: 30px;">
+            C Link Moodboard</h3>
+        <div class="video-container">
+            <img id="demo-image-3" src="assets/04.flo_link-moodboard.preview.png" alt="Moodboard Preview">
+        </div>
+    </section>
+
+    <!-- Page 5 Image Section -->
+    <section id="presentation-4" class="presentation-section">
+        <h3 class="video-subheading"
+            style="font-size: 20px; color: var(--text-secondary); font-weight: 500; margin-bottom: 30px;">
+            D Redesign ID Linz Website</h3>
+        <div class="video-container">
+            <img id="demo-image-4" src="id-linz-website/Screenshot 2026-03-04 um 22.08.00.png"
+                alt="ID Linz Website Redesign">
+            <div class="video-controls">
+                <a href="id-linz-website/index.html" class="btn btn-primary video-btn" target="_blank">Start</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 6 Image Section -->
+    <section id="presentation-5" class="presentation-section">
+        <h3 class="video-subheading"
+            style="font-size: 20px; color: var(--text-secondary); font-weight: 500; margin-bottom: 30px;">
+            E Energy Dashboard für Home Assistant</h3>
+        <div class="video-container">
+            <img id="demo-image-5" src="05.energy.dashboardanimations/assets/energy_dashboard_preview.png"
+                alt="Energy Dashboard for Home Assistant">
+            <div class="video-controls">
+                <a href="05.energy.dashboardanimations/demo.html" class="btn btn-primary video-btn"
+                    target="_blank">Start</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outro Section -->
+    <section class="hero-section" id="outro">
+        <div class="hero-content">
+            <h1 class="hero-title" style="opacity: 1; transform: none;">
+                Vibe-Coding
+            </h1>
+            <p class="hero-subtitle"
+                style="opacity: 1; transform: none; font-size: clamp(24px, 3vw, 32px); font-weight: 500; color: #000;">
+                ...und jetzt geht es los! ;)
+            </p>
+        </div>
+    </section>
+
+    <!-- Custom split text logic since GSAP SplitText is a club plugin, we'll implement a simple vanilla version in JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
+import { Konfetti } from '@/components/Konfetti'
 import { FeaturedProject } from '@/components/FeaturedProject'
 import { ProjectSlider } from '@/components/ProjectSlider'
 import { About } from '@/components/About'
@@ -10,6 +11,7 @@ import { Contact } from '@/components/Contact'
 export default function Home() {
   return (
     <>
+      <Konfetti />
       <Navbar />
       <main>
         <Hero />
