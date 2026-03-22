@@ -27,6 +27,7 @@ export default function Impressum() {
             Mariahilferstraße 124/13a<br />
             A-1070 Wien<br />
             Österreich</p>
+            <p className="mt-2">UID-Nr.: ATU82798206</p>
           </div>
 
           <div>
