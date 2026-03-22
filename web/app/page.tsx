@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
 import { Konfetti } from '@/components/Konfetti'
+import { CookieBanner } from '@/components/CookieBanner'
 import { FeaturedProject } from '@/components/FeaturedProject'
 import { ProjectSlider } from '@/components/ProjectSlider'
 import { About } from '@/components/About'
@@ -27,9 +28,13 @@ export default function Home() {
           <span className="font-mono text-xs opacity-30">
             © {new Date().getFullYear()} Florian Huber e.U. — Vienna
           </span>
-          <span className="font-mono text-xs opacity-30">Industrial Designer</span>
+          <div className="flex items-center gap-6">
+            <a href="/impressum" className="font-mono text-xs opacity-30 hover:opacity-60 transition-opacity">Impressum</a>
+            <a href="/datenschutz" className="font-mono text-xs opacity-30 hover:opacity-60 transition-opacity">Datenschutz</a>
+          </div>
         </div>
       </footer>
+      <CookieBanner />
     </>
   )
 }

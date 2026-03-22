@@ -43,7 +43,7 @@ export function StructuredData() {
       "addressLocality": "Vienna",
       "addressCountry": "AT"
     },
-    "email": "office@florianhuber.at",
+    "email": "new@ideawithflo.com",
     "areaServed": "Worldwide",
     "serviceType": [
       "Product Design",

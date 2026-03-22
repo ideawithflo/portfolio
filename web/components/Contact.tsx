@@ -20,10 +20,10 @@ export function Contact() {
             </a>
             <div className="flex flex-col gap-4">
               <a
-                href="mailto:office@florianhuber.at"
+                href="mailto:new@ideawithflo.com"
                 className="font-mono text-sm opacity-60 hover:opacity-100 transition-opacity"
               >
-                office@florianhuber.at
+                new@ideawithflo.com
               </a>
               <a
                 href="https://www.linkedin.com/in/florian-huber-055700169/"
@@ -36,7 +36,7 @@ export function Contact() {
             </div>
           </div>
           <form
-            action="mailto:office@florianhuber.at"
+            action="mailto:new@ideawithflo.com"
             method="post"
             encType="text/plain"
             className="flex flex-col gap-6"

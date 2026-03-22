@@ -64,7 +64,7 @@ export default function NewPage() {
     const subject = `New Project Inquiry — ${formatDateFull(selectedDate)} at ${selectedSlot}`
     const body = `Name: ${form.name}%0AEmail: ${form.email}%0ACompany: ${form.company}%0A%0AMessage:%0A${form.message}%0A%0ARequested Meeting:%0A${formatDateFull(selectedDate)} at ${selectedSlot}`
 
-    window.location.href = `mailto:office@florianhuber.at?subject=${encodeURIComponent(subject)}&body=${body}`
+    window.location.href = `mailto:new@ideawithflo.com?subject=${encodeURIComponent(subject)}&body=${body}`
 
     setTimeout(() => {
       setSending(false)

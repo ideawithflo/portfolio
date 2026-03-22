@@ -89,7 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "description": "Industrial design studio based in Vienna, Austria.",
     "slogan": "Florian Huber manifestiert Ideen",
     "address": { "@type": "PostalAddress", "addressLocality": "Vienna", "addressCountry": "AT" },
-    "email": "office@florianhuber.at",
+    "email": "new@ideawithflo.com",
     "areaServed": "Worldwide",
     "sameAs": ["https://www.linkedin.com/in/florian-huber-055700169/"]
   })
