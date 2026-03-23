@@ -33,15 +33,15 @@ export function Navbar() {
           <div
             className="transition-all duration-500 ease-out overflow-hidden"
             style={{
-              width: scrolled ? '32px' : '0px',
+              width: scrolled ? '48px' : '0px',
               opacity: scrolled ? 1 : 0,
             }}
           >
             <Image
               src={theme === 'dark' ? '/Logo_white@300x.png' : '/Logo@300x.png'}
               alt="Florian Huber"
-              width={32}
-              height={32}
+              width={48}
+              height={48}
               className="object-contain"
             />
           </div>
