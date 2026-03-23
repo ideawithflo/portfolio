@@ -42,11 +42,11 @@ export function About() {
           </div>
           <div>
             <p className="font-mono text-xs tracking-widest uppercase opacity-100 mb-6">Selected Clients</p>
-            <div className="flex flex-col divide-y divide-[var(--border)]">
+            <div className="flex flex-wrap gap-2">
               {clients.map(client => (
                 <span
                   key={client}
-                  className="font-light text-lg py-3"
+                  className="font-mono text-xs px-3 py-1.5 border border-[var(--border)]"
                 >
                   {client}
                 </span>
