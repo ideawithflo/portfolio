@@ -54,6 +54,13 @@ export function About() {
                 </span>
               ))}
             </div>
+
+            <p className="font-mono text-xs tracking-widest uppercase opacity-100 mt-10 mb-6">Teaching</p>
+            <div className="flex flex-wrap gap-2">
+              <span className="font-mono text-xs px-3 py-1.5 border border-[var(--border)]">
+                Lecturer — University of Arts Linz
+              </span>
+            </div>
           </div>
         </div>
       </div>
