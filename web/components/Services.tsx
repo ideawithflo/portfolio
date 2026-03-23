@@ -22,7 +22,7 @@ const services = [
   {
     number: '05',
     title: 'Vibe-Coding',
-    desc: 'Bringing ideas to life through rapid digital prototyping, interactive concepts and AI-assisted development — from sketch to working product.',
+    desc: 'Turning design concepts directly into code — building websites, apps and digital tools that look and feel exactly as intended. No handoff, no translation loss.',
   },
 ]
 
