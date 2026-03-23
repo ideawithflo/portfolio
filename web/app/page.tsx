@@ -31,6 +31,7 @@ export default function Home() {
           <div className="flex items-center gap-6">
             <a href="/impressum" className="font-mono text-xs opacity-30 hover:opacity-60 transition-opacity">Impressum</a>
             <a href="/datenschutz" className="font-mono text-xs opacity-30 hover:opacity-60 transition-opacity">Datenschutz</a>
+            <a href="/agb" className="font-mono text-xs opacity-30 hover:opacity-60 transition-opacity">AGB</a>
           </div>
         </div>
       </footer>

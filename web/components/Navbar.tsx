@@ -8,6 +8,7 @@ import { ThemeToggle } from './ThemeToggle'
 const links = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
+  { href: '/workflow', label: 'Workflow' },
   { href: '#services', label: 'Services' },
   { href: '#contact', label: 'Contact' },
   { href: '/new', label: 'Start a Project', highlight: true },
