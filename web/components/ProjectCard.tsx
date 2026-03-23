@@ -25,7 +25,7 @@ export function ProjectCard({ project }: { project: Project }) {
             className="object-cover group-hover:scale-105 transition-transform duration-500"
           />
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center opacity-20">
+          <div className="absolute inset-0 flex items-center justify-center opacity-100">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
               <rect x="3" y="3" width="18" height="18" rx="2"/>
               <circle cx="8.5" cy="8.5" r="1.5"/>
@@ -38,14 +38,14 @@ export function ProjectCard({ project }: { project: Project }) {
       {/* Info */}
       <div className="flex items-start justify-between">
         <div>
-          <h3 className="font-light text-lg group-hover:opacity-60 transition-opacity">
+          <h3 className="font-light text-lg group-hover:opacity-100 transition-opacity">
             {project.title}
           </h3>
-          <p className="font-mono text-xs tracking-widest uppercase opacity-40 mt-1">
+          <p className="font-mono text-xs tracking-widest uppercase opacity-100 mt-1">
             {project.category}
           </p>
         </div>
-        <span className="font-mono text-xs opacity-30 mt-1">{project.year}</span>
+        <span className="font-mono text-xs opacity-100 mt-1">{project.year}</span>
       </div>
     </Link>
   )

@@ -21,7 +21,7 @@ export function CookieBanner() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-[var(--border)] bg-[var(--bg)] px-6 py-4">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <p className="font-mono text-xs opacity-60 leading-relaxed max-w-xl">
+        <p className="font-mono text-xs opacity-100 leading-relaxed max-w-xl">
           Diese Website verwendet ausschließlich technisch notwendige Cookies (Theme-Präferenz). Kein Tracking, keine Werbung.{' '}
           <Link href="/datenschutz" className="underline hover:opacity-100">Datenschutz</Link>
         </p>

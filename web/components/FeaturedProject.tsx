@@ -34,8 +34,8 @@ export function FeaturedProject() {
     <section className="border-t border-[var(--border)] py-0">
       <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="flex items-center justify-between mb-2">
-          <span className="font-mono text-xs tracking-widest uppercase opacity-40">Featured Project</span>
-          <span className="font-mono text-xs opacity-30">{project.year}</span>
+          <span className="font-mono text-xs tracking-widest uppercase opacity-100">Featured Project</span>
+          <span className="font-mono text-xs opacity-100">{project.year}</span>
         </div>
       </div>
 
@@ -52,7 +52,7 @@ export function FeaturedProject() {
               className="object-cover"
             />
           ) : (
-            <div className="flex flex-col items-center justify-center gap-4 opacity-20 p-8">
+            <div className="flex flex-col items-center justify-center gap-4 opacity-100 p-8">
               <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.75">
                 <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                 <path d="M2 17l10 5 10-5"/>
@@ -67,21 +67,21 @@ export function FeaturedProject() {
 
         {/* Right — project info */}
         <div className="flex flex-col justify-center px-8 md:px-16 py-16">
-          <span className="font-mono text-xs tracking-widest uppercase opacity-40 mb-6">
+          <span className="font-mono text-xs tracking-widest uppercase opacity-100 mb-6">
             {project.category}
           </span>
           <h2 className="text-4xl md:text-5xl font-light leading-tight mb-8">
             {project.title}
           </h2>
           {project.description && (
-            <p className="opacity-60 leading-relaxed font-light mb-10">
+            <p className="opacity-100 leading-relaxed font-light mb-10">
               {project.description[0]?.children?.[0]?.text || ''}
             </p>
           )}
           {project.tags?.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-10">
               {project.tags.map((tag: string) => (
-                <span key={tag} className="font-mono text-xs px-3 py-1 border border-[var(--border)] opacity-60">
+                <span key={tag} className="font-mono text-xs px-3 py-1 border border-[var(--border)] opacity-100">
                   {tag}
                 </span>
               ))}
@@ -96,7 +96,7 @@ export function FeaturedProject() {
                 View Project →
               </Link>
             )}
-            <a href="#projects" className="font-mono text-xs tracking-widest uppercase opacity-50 hover:opacity-100 transition-opacity">
+            <a href="#projects" className="font-mono text-xs tracking-widest uppercase opacity-100 hover:opacity-100 transition-opacity">
               All Projects
             </a>
           </div>

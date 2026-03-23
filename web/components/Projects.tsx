@@ -29,8 +29,8 @@ export async function Projects() {
     <section id="projects" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-end justify-between mb-16">
-          <p className="font-mono text-xs tracking-widest uppercase opacity-40">Projects</p>
-          <span className="font-mono text-xs opacity-30">{displayProjects.length} works</span>
+          <p className="font-mono text-xs tracking-widest uppercase opacity-100">Projects</p>
+          <span className="font-mono text-xs opacity-100">{displayProjects.length} works</span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
           {displayProjects.map((project: any) => (

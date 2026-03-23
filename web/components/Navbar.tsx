@@ -55,7 +55,7 @@ export function Navbar() {
               href={l.href}
               className={l.highlight
                 ? 'font-mono text-xs tracking-widest uppercase border border-[var(--fg)] px-4 py-2 hover:bg-[var(--fg)] hover:text-[var(--bg)] transition-colors'
-                : 'font-mono text-xs tracking-widest uppercase opacity-60 hover:opacity-100 transition-opacity'
+                : 'font-mono text-xs tracking-widest uppercase opacity-100 hover:opacity-100 transition-opacity'
               }
             >
               {l.label}
@@ -89,7 +89,7 @@ export function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="font-mono text-sm tracking-widest uppercase opacity-60 hover:opacity-100 transition-opacity"
+              className="font-mono text-sm tracking-widest uppercase opacity-100 hover:opacity-100 transition-opacity"
             >
               {l.label}
             </a>

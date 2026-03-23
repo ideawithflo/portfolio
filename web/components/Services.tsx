@@ -30,13 +30,13 @@ export function Services() {
   return (
     <section id="services" className="py-32 px-6 border-t border-[var(--border)]">
       <div className="max-w-6xl mx-auto">
-        <p className="font-mono text-xs tracking-widest uppercase opacity-40 mb-16">Services</p>
+        <p className="font-mono text-xs tracking-widest uppercase opacity-100 mb-16">Services</p>
         <div className="divide-y divide-[var(--border)]">
           {services.map(s => (
             <div key={s.number} className="py-8 grid md:grid-cols-12 gap-4 md:gap-8 group">
-              <span className="font-mono text-xs opacity-30 md:col-span-1">{s.number}</span>
+              <span className="font-mono text-xs opacity-100 md:col-span-1">{s.number}</span>
               <h3 className="text-xl font-light md:col-span-3">{s.title}</h3>
-              <p className="opacity-50 leading-relaxed font-light md:col-span-8">{s.desc}</p>
+              <p className="opacity-100 leading-relaxed font-light md:col-span-8">{s.desc}</p>
             </div>
           ))}
         </div>

@@ -35,7 +35,7 @@ export function Hero() {
           className="object-contain select-none"
           priority
         />
-        <p className="font-mono text-xs tracking-widest uppercase opacity-40 mt-8">
+        <p className="font-mono text-xs tracking-widest uppercase opacity-100 mt-8">
           Industrial Designer — Vienna, Austria
         </p>
         <div className="mt-10 flex items-center gap-6">
@@ -47,14 +47,14 @@ export function Hero() {
           </a>
           <a
             href="#contact"
-            className="font-mono text-xs tracking-widest uppercase opacity-50 hover:opacity-100 transition-opacity"
+            className="font-mono text-xs tracking-widest uppercase opacity-100 hover:opacity-100 transition-opacity"
           >
             Get in Touch →
           </a>
         </div>
       </div>
 
-      <div className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-opacity duration-300 ${scrolled ? 'opacity-0' : 'opacity-30'} animate-bounce`}>
+      <div className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-opacity duration-300 ${scrolled ? 'opacity-0' : 'opacity-100'} animate-bounce`}>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M12 5v14M5 12l7 7 7-7"/>
         </svg>

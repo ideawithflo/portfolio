@@ -20,7 +20,7 @@ export function ModelViewer({ src, poster, alt = '3D Model' }: ModelViewerProps)
         shadow-intensity="1"
         style={{ width: '100%', height: '100%', minHeight: '480px', background: 'transparent' }}
       />
-      <p className="absolute bottom-3 right-3 font-mono text-xs opacity-30 select-none pointer-events-none">
+      <p className="absolute bottom-3 right-3 font-mono text-xs opacity-100 select-none pointer-events-none">
         drag to rotate · scroll to zoom
       </p>
     </div>
