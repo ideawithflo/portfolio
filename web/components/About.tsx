@@ -1,6 +1,6 @@
 const skills = [
   'Product Design', 'Industrial Design', 'Concept Development',
-  '3D Modeling & CAD', 'Prototyping', 'Design Strategy',
+  '3D Modeling & CAD', 'Prototyping', 'Vibe-Coding',
   'User Research', 'Sketching & Ideation', 'Material Exploration',
   'Design for Manufacturing', 'Sustainability', 'Brand Identity',
 ]
