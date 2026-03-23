@@ -12,7 +12,7 @@ async function getProject(slug: string) {
   return client.fetch(`
     *[_type == "project" && slug.current == $slug][0] {
       _id, title, slug, category, year, featured,
-      coverImage, images[], description,
+      coverImage, images[]{image, orientation}, description,
       tags, "modelUrl": modelFile.asset->url
     }
   `, { slug })
@@ -94,19 +94,31 @@ export default async function ProjectPage({ params }: { params: { slug: string }
             </div>
           )}
 
-          {/* Additional images */}
+          {/* Additional images — 1 column, orientation from CMS */}
           {project.images?.length > 0 && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {project.images.map((img: any, i: number) => (
-                <div key={i} className="aspect-[4/3] relative overflow-hidden bg-[var(--card)]">
-                  <Image
-                    src={urlFor(img).width(800).height(600).url()}
-                    alt={`${project.title} ${i + 1}`}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-              ))}
+            <div className="flex flex-col gap-4">
+              {project.images.map((item: any, i: number) => {
+                const img = item.image || item
+                if (!img || !img.asset) return null
+                const orientation = item.orientation || 'landscape'
+                const aspectClass =
+                  orientation === 'portrait' ? 'aspect-[9/16]' :
+                  orientation === 'square'   ? 'aspect-square' :
+                                               'aspect-video'
+                const imgW = orientation === 'portrait' ? 800  : 1400
+                const imgH = orientation === 'portrait' ? 1422 : orientation === 'square' ? 800 : 800
+
+                return (
+                  <div key={i} className={`${aspectClass} relative overflow-hidden bg-[var(--card)] w-full`}>
+                    <Image
+                      src={urlFor(img).width(imgW).height(imgH).url()}
+                      alt={`${project.title} ${i + 1}`}
+                      fill
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )
+              })}
             </div>
           )}
         </div>
