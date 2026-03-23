@@ -21,8 +21,8 @@ const services = [
   },
   {
     number: '05',
-    title: 'Design Strategy',
-    desc: 'Strategic design consulting to help companies define their design vision, process, and long-term product roadmap.',
+    title: 'Vibe-Coding',
+    desc: 'Bringing ideas to life through rapid digital prototyping, interactive concepts and AI-assisted development — from sketch to working product.',
   },
 ]
 
