@@ -1,8 +1,12 @@
-const skills = [
-  'Product Design', 'Industrial Design', 'Concept Development',
-  '3D Modeling & CAD', 'Prototyping', 'Vibe-Coding',
-  'User Research', 'Sketching & Ideation', 'Material Exploration',
-  'Design for Manufacturing', 'Sustainability', 'Brand Identity',
+const clients = [
+  'Swietelsky',
+  'ÖBB',
+  'Google',
+  'ASFINAG',
+  'Land NÖ',
+  'Saalbach-Hinterglemm',
+  'BUWOG',
+  'Österreichisches Parlament',
 ]
 
 export function About() {
@@ -37,14 +41,14 @@ export function About() {
             </div>
           </div>
           <div>
-            <p className="font-mono text-xs tracking-widest uppercase opacity-100 mb-6">Skills</p>
-            <div className="flex flex-wrap gap-2">
-              {skills.map(skill => (
+            <p className="font-mono text-xs tracking-widest uppercase opacity-100 mb-6">Selected Clients</p>
+            <div className="flex flex-col divide-y divide-[var(--border)]">
+              {clients.map(client => (
                 <span
-                  key={skill}
-                  className="font-mono text-xs px-3 py-1.5 border border-[var(--border)] opacity-100"
+                  key={client}
+                  className="font-light text-lg py-3"
                 >
-                  {skill}
+                  {client}
                 </span>
               ))}
             </div>
