@@ -44,6 +44,12 @@ export default defineConfig({
                   )
               ),
             S.listItem()
+              .title('Workflow / Blog')
+              .child(
+                S.documentTypeList('post')
+                  .title('Workflow / Blog')
+              ),
+            S.listItem()
               .title('Site Settings')
               .child(
                 S.document()
