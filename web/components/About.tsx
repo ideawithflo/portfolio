@@ -7,6 +7,8 @@ const clients = [
   'Saalbach-Hinterglemm',
   'BUWOG',
   'Österreichisches Parlament',
+  'ISTA Institute of Science and Technology',
+  'STRABAG',
 ]
 
 export function About() {
