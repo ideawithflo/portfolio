@@ -4,6 +4,10 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ideawithflo.com'),
+  icons: {
+    icon: '/favicon-32.png',
+    apple: '/apple-touch-icon.png',
+  },
   title: {
     default: 'Florian Huber — Industrial Designer Vienna',
     template: '%s | Florian Huber Industrial Designer',
