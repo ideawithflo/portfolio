@@ -43,7 +43,6 @@ export default async function WorkflowPage() {
         {posts.length === 0 ? (
           <div className="border border-dashed border-[var(--border)] p-16 text-center">
             <p className="font-mono text-xs opacity-100 mb-2">No posts yet</p>
-            <p className="font-mono text-xs opacity-100">Add videos in Sanity Studio → Workflow / Blog</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
