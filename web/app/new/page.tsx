@@ -91,7 +91,7 @@ export default function NewPage() {
           <p className="font-mono text-xs tracking-widest uppercase opacity-100 mb-4">Start something</p>
           <h1 className="text-5xl md:text-7xl font-light leading-none mb-6">New Idea.</h1>
           <p className="opacity-100 font-light max-w-lg">
-            Pick a date and time for a free 30-minute intro call. Tell me about your project and let's see if we're a good fit.
+            Pick a date and time for a free 30-minute intro call. Tell me about your project and let’s see if we’re a good fit.
           </p>
         </div>
 
@@ -194,7 +194,7 @@ export default function NewPage() {
                 <label className="font-mono text-xs tracking-widest uppercase opacity-100 block mb-2">Tell me about your idea *</label>
                 <textarea value={form.message} onChange={e => setForm(f => ({...f, message: e.target.value}))} rows={4}
                   className="w-full bg-transparent border-b border-[var(--border)] pb-3 focus:outline-none focus:border-[var(--fg)] transition-colors font-light placeholder:opacity-100 resize-none"
-                  placeholder="What are you working on? What's the challenge?" />
+                  placeholder="What are you working on? What’s the challenge?" />
               </div>
               <button
                 onClick={handleSubmit}

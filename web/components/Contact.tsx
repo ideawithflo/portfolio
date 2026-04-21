@@ -6,10 +6,10 @@ export function Contact() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="text-4xl md:text-5xl font-light leading-tight mb-8">
-              Let's work<br />together.
+              Let’s work<br />together.
             </h2>
             <p className="opacity-100 leading-relaxed mb-10">
-              Have a project in mind? I'd love to hear about it.
+              Have a project in mind? I’d love to hear about it.
               Book a free 30-minute intro call or reach out directly.
             </p>
             <a
