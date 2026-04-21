@@ -66,7 +66,7 @@ export default function Datenschutz() {
             <a href="https://www.dsb.gv.at" target="_blank" rel="noopener noreferrer" className="underline">dsb.gv.at</a></p>
           </div>
 
-          <p className="font-mono text-xs opacity-100">Stand: 21. April 2026</p>
+          <p className="font-mono text-xs opacity-100">Stand: April 2026</p>
         </div>
       </div>
 
