@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'AGB',
   robots: { index: false },
+  alternates: { canonical: 'https://www.ideawithflo.com/agb' },
 }
 
 const sections = [

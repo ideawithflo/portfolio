@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Impressum',
   robots: { index: false },
+  alternates: { canonical: 'https://www.ideawithflo.com/impressum' },
 }
 
 export default function Impressum() {
@@ -68,6 +69,7 @@ export default function Impressum() {
         <div className="max-w-4xl mx-auto flex gap-6">
           <Link href="/impressum" className="font-mono text-xs opacity-100 hover:opacity-100 transition-opacity">Impressum</Link>
           <Link href="/datenschutz" className="font-mono text-xs opacity-100 hover:opacity-100 transition-opacity">Datenschutz</Link>
+          <Link href="/agb" className="font-mono text-xs opacity-100 hover:opacity-100 transition-opacity">AGB</Link>
         </div>
       </footer>
     </div>

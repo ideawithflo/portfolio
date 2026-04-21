@@ -3,7 +3,7 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ideawithflo.com'),
+  metadataBase: new URL('https://www.ideawithflo.com'),
   icons: {
     icon: '/favicon-32.png',
     apple: '/apple-touch-icon.png',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'design strategy',
     'ideawithflo',
   ],
-  authors: [{ name: 'Florian Huber', url: 'https://ideawithflo.com' }],
+  authors: [{ name: 'Florian Huber', url: 'https://www.ideawithflo.com' }],
   creator: 'Florian Huber',
   publisher: 'Florian Huber e.U.',
   robots: {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     alternateLocale: 'de_AT',
-    url: 'https://ideawithflo.com',
+    url: 'https://www.ideawithflo.com',
     siteName: 'Florian Huber — Industrial Designer',
     title: 'Florian Huber — Industrial Designer Vienna',
     description: 'Industrial designer based in Vienna. Product design, concept development, 3D modeling & prototyping. We manifest ideas.',
@@ -62,10 +62,10 @@ export const metadata: Metadata = {
     images: ['/Logo@300x.png'],
   },
   alternates: {
-    canonical: 'https://ideawithflo.com',
+    canonical: 'https://www.ideawithflo.com',
     languages: {
-      'en-US': 'https://ideawithflo.com',
-      'de-AT': 'https://ideawithflo.com',
+      'en-US': 'https://www.ideawithflo.com',
+      'de-AT': 'https://www.ideawithflo.com',
     },
   },
   verification: {
@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Florian Huber",
-    "url": "https://ideawithflo.com",
+    "url": "https://www.ideawithflo.com",
     "jobTitle": "Industrial Designer",
     "description": "Industrial designer based in Vienna, Austria. Specializing in product design, concept development, 3D modeling & CAD, prototyping, and design strategy.",
     "address": { "@type": "PostalAddress", "addressLocality": "Vienna", "addressCountry": "AT" },
@@ -89,7 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Florian Huber e.U.",
-    "url": "https://ideawithflo.com",
+    "url": "https://www.ideawithflo.com",
     "description": "Industrial design studio based in Vienna, Austria.",
     "slogan": "Florian Huber manifestiert Ideen",
     "address": { "@type": "PostalAddress", "addressLocality": "Vienna", "addressCountry": "AT" },

@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Datenschutz',
   robots: { index: false },
+  alternates: { canonical: 'https://www.ideawithflo.com/datenschutz' },
 }
 
 export default function Datenschutz() {
@@ -34,13 +35,13 @@ export default function Datenschutz() {
           </div>
 
           <div>
-            <h2 className="font-mono text-xs tracking-widest uppercase opacity-100 mb-3">3. Kontaktformular</h2>
-            <p>Wenn Sie das Kontaktformular nutzen oder eine Anfrage senden, werden die angegebenen Daten (Name, E-Mail, Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben.</p>
+            <h2 className="font-mono text-xs tracking-widest uppercase opacity-100 mb-3">3. Kontaktaufnahme</h2>
+            <p>Wenn Sie per E-Mail oder über sonstige Kontaktwege eine Anfrage senden, werden die angegebenen Daten ausschließlich zur Bearbeitung Ihrer Anfrage und für allfällige Anschlussfragen verarbeitet und nicht ohne Rechtsgrundlage an Dritte weitergegeben.</p>
           </div>
 
           <div>
             <h2 className="font-mono text-xs tracking-widest uppercase opacity-100 mb-3">4. Cookies</h2>
-            <p>Diese Website verwendet ausschließlich technisch notwendige Cookies (z.B. Speicherung der Theme-Präferenz Hell/Dunkel). Es werden keine Tracking- oder Marketing-Cookies verwendet. Ihre Einwilligung ist hierfür nicht erforderlich.</p>
+            <p>Diese Website verwendet ausschließlich technisch notwendige Cookies, insbesondere zur Speicherung der Theme-Präferenz (Hell/Dunkel). Es werden derzeit keine Tracking- oder Marketing-Cookies eingesetzt.</p>
           </div>
 
           <div>
@@ -65,7 +66,7 @@ export default function Datenschutz() {
             <a href="https://www.dsb.gv.at" target="_blank" rel="noopener noreferrer" className="underline">dsb.gv.at</a></p>
           </div>
 
-          <p className="font-mono text-xs opacity-100">Stand: März 2026</p>
+          <p className="font-mono text-xs opacity-100">Stand: 21. April 2026</p>
         </div>
       </div>
 
@@ -73,6 +74,7 @@ export default function Datenschutz() {
         <div className="max-w-4xl mx-auto flex gap-6">
           <Link href="/impressum" className="font-mono text-xs opacity-100 hover:opacity-100 transition-opacity">Impressum</Link>
           <Link href="/datenschutz" className="font-mono text-xs opacity-100 hover:opacity-100 transition-opacity">Datenschutz</Link>
+          <Link href="/agb" className="font-mono text-xs opacity-100 hover:opacity-100 transition-opacity">AGB</Link>
         </div>
       </footer>
     </div>
