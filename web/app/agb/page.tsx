@@ -323,7 +323,7 @@ export default function AGB() {
       <div className="pt-32 pb-24 px-6 max-w-3xl mx-auto">
         <p className="font-mono text-xs tracking-widest uppercase opacity-100 mb-4">Legal</p>
         <h1 className="text-5xl font-light mb-4">Allgemeine Geschäftsbedingungen</h1>
-        <p className="font-mono text-xs opacity-100 mb-6">Florian Huber e.U. — Stand: April 2026</p>
+        <p className="font-mono text-xs opacity-100 mb-6">Florian Huber e.U. — Stand: 21. April 2026</p>
         <p className="font-light opacity-100 leading-relaxed mb-16">
           Diese AGB sind auf B2B-Projekte zugeschnitten, insbesondere für Industrial Design, Produktentwicklung,
           Prototyping, Designberatung sowie digitale und AI/KI-gestützte Leistungen.
